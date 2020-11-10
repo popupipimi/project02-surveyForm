@@ -1,0 +1,102 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+      .background{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .opacity{
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+        opacity: 88%;
+      }
+    </style>
+    <title>Survey Form</title>
+  </head>
+  <body class="background">
+    <div class="container">
+      <div class="row">
+        <div class="offset-lg-2 col-lg-8">
+          <div class="card p-3 my-5 opacity text-dark">
+            <div class="text-center">
+              <h1 id="title">Instagram Survey Form</h1>
+              <p id="description">Thank you for taking the time to help us improve the platform</p>
+            </div>
+            <form id="survey-form" action="">
+              <div class="form-group">
+                <label id="name-label" for="name">Name :</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email :</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your email" required>
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number">Age :</label>
+                <input type="number" class="form-control" id="number" name="number" min="1" max="100" placeholder="1-100" required>
+              </div>
+              <div class="form-group">
+                <select id="dropdown" class="custom-select" required>
+                  <option selected>Open this select menu</option>
+                  <option value="1">Option One</option>
+                  <option value="2">Option Two</option>
+                  <option value="3">Option Three</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadio1" name="gender" class="custom-control-input" value="Male">
+                  <label class="custom-control-label" for="customRadio1">Male</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadio2" name="gender" class="custom-control-input" value="Female">
+                  <label class="custom-control-label" for="customRadio2">Female</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1" value="email">
+                  <label class="custom-control-label" for="customCheck1">Join via Email</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="customCheck2" value="facebook">
+                  <label class="custom-control-label" for="customCheck2">Join via Facebook</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="comment">Suggestions</label>
+                <textarea name="comment" id="comment" class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <button id="submit" class="btn btn-primary" name="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  </body>
+</html>
